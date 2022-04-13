@@ -129,6 +129,15 @@ Auto-merging shopping_list.txt
 CONFLICT (content): Merge conflict in shopping_list.txt
 Automatic merge failed; fix conflicts and then commit the result.
 
+ - Се јавува проблем при merge на втората гранка и затоа во текст докумрнтот ке имаме што се наоѓа на Head и на branch2 и
+така одлучуваме што да остане а што да го тргнеме позади тоа што има промени. Го менуваме текст документот како што сакаме
+и правиме git commit -a -m 'Solving merge commit'
 
 User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master|MERGING)
 $ git add .
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+git commit -m "Add docs"
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+git push --all
