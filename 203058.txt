@@ -1,0 +1,134 @@
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo
+$ git init
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo (master)
+$ git remote add origin https://github.com/fdzamtovski/SI_2022_lab1_203058.git
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo (master)
+$ git remote -v
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git add .
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git commit -m 'Add 5 items to the shopping list'
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git commit -a - m 'Add quantities to the items'
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git commit -a -m 'Add quantities to the items'
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git checkout -b branch1
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch1)
+$ git checkout -b branch2
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git log
+commit 2a09edca2e9e278c520f3840e40b0e7a8d6f1e47 (HEAD -> branch2, master, branch1)
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:28:30 2022 +0200
+
+    Add quantities to the items
+
+commit 8320b93ba97a362c871d5ed78b2bd1eeb1dee42a
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:27:43 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c058921c485c381598c37647ca139aaa8a5d4c81 (origin/master, origin/HEAD)
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:23:10 2022 +0200
+
+    Update README.md
+
+commit f252ae63ea60fff7f353a36550086e2181fa66f9
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:22:37 2022 +0200
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git push --all
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git checkout branch1
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch1)
+$ git commit -a -m 'Change quantity of item #5'
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch1)
+$ git checkout master
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git commit -a -m 'Change quantity of item #2'
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git push --all
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git checkout branch2
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git commit -a -m 'Modify item #4'
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git log
+commit 6ab9ee11c0cd541ba5d67239666387a8efc245db (HEAD -> branch2)
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:32:26 2022 +0200
+
+    Modify item #4
+
+commit 2a09edca2e9e278c520f3840e40b0e7a8d6f1e47 (origin/branch2)
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:28:30 2022 +0200
+
+    Add quantities to the items
+
+commit 8320b93ba97a362c871d5ed78b2bd1eeb1dee42a
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:27:43 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit c058921c485c381598c37647ca139aaa8a5d4c81
+Author: fdzamtovski <76556606+fdzamtovski@users.noreply.github.com>
+Date:   Wed Apr 13 10:23:10 2022 +0200
+
+    Update README.md
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git rebase -i --root
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2|REBASE 7/7)
+$ git rebase --abort
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (branch2)
+$ git checkout master
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git merge branch1
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master)
+$ git merge --no-ff branch2
+Auto-merging shopping_list.txt
+CONFLICT (content): Merge conflict in shopping_list.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+
+User@ASUS MINGW64 /d/User/Desktop/Lab1ISo/SI_2022_lab1_203058 (master|MERGING)
+$ git add .

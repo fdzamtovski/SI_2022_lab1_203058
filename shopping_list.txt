@@ -1,5 +1,10 @@
 Televizori x2
 Telefoni x9
 Konzoli x11
+<<<<<<< HEAD
 Laptopi x5
 Kompjuteri x17
+=======
+Tastarturi x5
+Kompjuteri x22
+>>>>>>> branch2
